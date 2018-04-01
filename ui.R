@@ -4,7 +4,7 @@ fluidPage(
   titlePanel('Social Media Sentiment in Singapore'),
   sidebarLayout(
     sidebarPanel(
-      selectInput('sent', 'Sentiment Type', c("Sentiment", "Positive", "Negative"), selected="Sentiment"),
+      selectInput('sent', 'Data Type', c("Sentiment", "Positive", "Negative", "Count"), selected="Sentiment"),
       selectInput('func', 'Aggregate Type', c("Mean", "Sum"), selected="Mean"),
       numericInput('binSize', 'Hexagon Size', 0.02,
                    min = 0.01, max = 0.05),

@@ -34,6 +34,9 @@ function(input, output, session) {
     else if(input$sent == "Sentiment") {
       plotData$sent;
     }
+    else if(input$sent == "Count") {
+      matrix(1, length(plotData$sent))
+    }
   })
 
   func <- reactive({
